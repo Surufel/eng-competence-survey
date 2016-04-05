@@ -1,4 +1,4 @@
-Survey about what makes a competent software engineer
+What makes a competent software engineer?
 =====================================================
 
 There's been a lot of discussion lately around software engineering hiring practices: how to find qualified candidates, how to hire them, and how they can be sucessful once they start. 
