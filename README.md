@@ -19,11 +19,9 @@ There should be a lot of interesting ways to slice this data, and I'm hoping for
 
 Where's the public data set? Can I have it?
 --------------------------------------------
-The short answer is yes, I will release the data when I release my analysis and results. When will that be? When it's done. Time estimates are made of folly, traps, and sadness. (But I promise it'll be soon. I look forward to seeing what people who are actually good at stats come up with.) 
+Yes. I'll release the data with my results. 
 
-Please add yourself to the mailing list [here] or follow this project for updates.
-
-If I decide to abandon the project for some reason, I'll release the data first. 
+Please add yourself to the mailing list [link goes here] or follow this project for updates.
 
 Privacy policy
 --------------
