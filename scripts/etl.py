@@ -35,7 +35,7 @@ if destfilename.exists():
     raise SystemExit("ok, quitting")
 
 # check we're not writing private data to a potentially public place
-if not args.public and str(project_dir) in str(destdir):
+if not args.public and str(project_dir.resolve()) in str(destdir.resolve()):
   raise SystemExit("Hey, don't save private data inside the git repo, you might accidentally commit it. ")
 
 if args.public:
