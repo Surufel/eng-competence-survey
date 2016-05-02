@@ -7,6 +7,8 @@ COL_TABLE = "Table"
 COL_COLUMN = "Column Name"
 COL_TYPE = "Type (if not str)"
 COL_ORIGINAL_ANSWER = "Original answer"
+COL_RESPONSE_ID = 'Response ID'
+COL_RESPONSE_ID_MAPPED = 'response_id'
 
 TRUE_VALUES = ['Yes', 'Yes, please include them']
 FALSE_VALUES = ['No', "No, keep them private", '']
@@ -61,7 +63,7 @@ def add_table(metadata, table_name, columns):
     table_name,
     metadata,
     Column('id', Integer, primary_key=True),
-    Column('request_id', Integer),
+    Column('response_id', Integer),
   ]
 
   for column in columns:

@@ -84,6 +84,8 @@ conn = engine.connect()
 for row in datafile:
   sql_data = defaultdict(defaultdict)
 
+  response_id = row[COL_RESPONSE_ID]
+
   for fieldname in datafile.fieldnames:
     if fieldname in CSV_FIELD_MAPPING:
       tablename = CSV_FIELD_MAPPING[fieldname]['table']
@@ -95,7 +97,13 @@ for row in datafile:
 
   for tablename in sql_data.keys():
     data = sql_data[tablename]
+    data[COL_RESPONSE_ID_MAPPED] = response_id
+    table = metadata.tables[tablename]
     conn.execute(table.insert(), data)
+
+  print('.', end="", flush=True)
+
+print("\n")
 
 print("done!")
 
